@@ -48,3 +48,35 @@ ALTER TABLE table_name ADD COLUMN column_name DATATYPE;
 ```
 ALTER TABLE table_name DROP COLUMN column_name;
 ```
+
+### Cambiar el nombre de una columna
+```
+ALTER TABLE table_name RENAME COLUMN column_name TO new_name;
+```
+
+### Insertar una fila
+```
+INSERT INTO table_name(column_1, column_2) VALUES(value1, value2);
+```
+
+### Ver la información de una tabla
+```
+SELECT columns FROM table_name;
+```
+
+### Eliminar una columna
+```
+DELETE FROM table_name WHERE condition;
+```
+
+#### Ejemplo: **`DELETE FROM second_table WHERE username='Luigi';`**
+
+### Eliminar una tabla
+```
+DROP TABLE table_name;
+```
+
+### Cambiar nombre a una base de datos
+```
+ALTER DATABASE database_name RENAME TO new_database_name;
+```
