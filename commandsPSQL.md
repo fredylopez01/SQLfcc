@@ -105,7 +105,59 @@ SELECT columns FROM table_name ORDER BY column_name;
 ALTER TABLE table_name ADD PRIMARY KEY(column_name);
 ```
 
+### AGREGAR UNA LLAVE PRIMARIA COMPUESTA
+```
+ALTER TABLE table_name ADD PRIMARY KEY(column1, column2);
+```
+
 ### ELIMINAR UNA RESTRICCION
 ```
 ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+```
+
+### VINCULAR FILAS DE UNA TABLA CON FILAS DE OTRA TABLA
+```
+ALTER TABLE table_name ADD COLUMN column_name DATATYPE REFERENCES referenced_table_name(referenced_column_name);
+```
+
+### REFORZAR LA RELACIÓN 1 A 1 DE LAS TABLAS
+```
+ALTER TABLE table_name ADD UNIQUE(column_name);
+```
+
+### CAMBIAR QUE UNA COLUMNA NO PUEDA SER NULA
+```
+ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
+```
+
+### ENCONTRAR UNA FILA CON UNA CONDICIÓN
+```
+SELECT columns FROM table_name WHERE condition;
+```
+
+### CREAR UNA TABLA Y AL MISMO TIEMPO AGREGAR COLUMNAS
+```
+CREATE TABLE table_name(column_name DATATYPE CONSTRAINTS);
+```
+
+### RELACIONAR VALORES ONE-TO-MANY 
+```
+ALTER TABLE table_name ADD COLUMN column_name DATATYPE CONSTRAINT REFERENCES referenced_table_name(referenced_column_name);
+```
+
+### CONFIGURAR UNA COLUMNA EXISTENTE COMO CLAVE EXTERNA
+```
+ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES referenced_table(referenced_column);
+```
+
+### VER TODOS LOS VALORES DE ALGUNA COLUMNA ONE-TO-ONE
+```
+SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreign_key_column;
+```
+
+### VER TODAS LOS VALORES DE LAS COLUMNAS ONE-TO-MAY
+```
+SELECT columns FROM junction_table
+FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key_column
+FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key_column;
 ```
