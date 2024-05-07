@@ -6,7 +6,7 @@
 
 ### log
 ```
-psql --username:<user_name> --dbname:<database_name>
+psql --username=<user_name> --dbname=<database_name>
 ```
 
 ### Listar bases de datos
@@ -31,7 +31,7 @@ CREATE DATABASE database_name;
 
 ### CREAR TABLA
 ```
-CREATE DATABASE database_name;
+CREATE TABLE table_name();
 ```
 
 ### Ver el contenido de una tabla
@@ -79,4 +79,33 @@ DROP TABLE table_name;
 ### Cambiar nombre a una base de datos
 ```
 ALTER DATABASE database_name RENAME TO new_database_name;
+```
+
+### INSERTAR VARIAS FILAS AL TIEMPO
+```
+INSERT INTO characters(name, homeland, favorite_color)
+VALUES('Mario', 'Mushroom Kingdom', 'Red'),
+('Luigi', 'Mushroom Kingdom', 'Green'),
+('Peach', 'Mushroom Kingdom', 'Pink');
+```
+
+### CAMBIAR EL VALOR DE UNA FILA
+
+```
+UPDATE table_name SET column_name=new_value WHERE condition;
+```
+
+### ORDENAR LAS FILAS
+```
+SELECT columns FROM table_name ORDER BY column_name;
+```
+
+### CREAR LLAVE PRIMARIA
+```
+ALTER TABLE table_name ADD PRIMARY KEY(column_name);
+```
+
+### ELIMINAR UNA RESTRICCION
+```
+ALTER TABLE table_name DROP CONSTRAINT constraint_name;
 ```
