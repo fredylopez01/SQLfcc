@@ -1,7 +1,7 @@
 # COMANDOS DE CONSOLA
 
-|COMAND|ACTION|
-|------|------|
+|COMAND|ACTION|Ejemplo
+|------|------|-|
 |``bash sh nameFile.sh``| Ejecutar un scrip en un archivo .sh|
 |``which bash``| Para saber cual|
 |``#!/bin/bash``| Configurar bash para correr el scrip|
@@ -11,6 +11,11 @@
 |``read VARIABLE``| Leer variable desde la consola|
 |``echo $VARIABLE``| Imprimir valor de la variable|
 |``echo -e "\nMESSAGE\n"``| Imprimir con linea en blanco arriba y abajo|
+|`man`|Utilizado para ver funciones e información de un comando| `man <command>` |
+|`wc`|Contar lineas (`-l`), palabras (`-w`) o caracteres (`-m`)| `wc -l <filename>` |
+|`grep`|Utilizado para buscar patrones en texto |`grep <pattern> <filename>` `grep --color -n <pattern> <filename>`|
+|`sed`|Usado para remplazar partes de un texto|```sed 's/<pattern>/<new_text>/' <filename>```|
+|`dif`|Comando para ver la diferencia entre dos archivos|`diff <file_1> <file_2>`|
 
 ### IF ELSE
 ```

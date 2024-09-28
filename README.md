@@ -15,3 +15,13 @@ Curso de freeCodeCamp, que desarrollaré para aprender SQL, este curso consta de
 ### [Linea de Comandos - Terminal]()
 
 ### [Comandos en Postgres SQL](commandsPSQL.md)
+
+
+## Activities
+
+- ### [Students](./students/)
+
+## Projects
+### [Project 1: Celestial Bodies](./1.celestialBodies/)
+
+### [Project 2: World Cup](./2.worldCup/)
