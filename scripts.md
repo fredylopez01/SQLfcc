@@ -50,6 +50,16 @@ do
 done
 ```
 
+### SWITCH-CASE
+```
+case $MAIN_MENU_SELECTION in
+  1) RENT_MENU ;;
+  2) RETURN_MENU ;;
+  3) EXIT ;;
+  *) MAIN_MENU ;;
+esac
+```
+
 #### Puede usar para comparar
 |N|Condición|Equivalencia|
 |-|-------|-------|
