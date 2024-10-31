@@ -9,6 +9,17 @@
 psql --username=<user_name> --dbname=<database_name>
 ```
 
+### Exportar la base de datos a un archivo .sql
+```
+pg_dump -cC --inserts -U freecodecamp dbname > dbname.sql
+```
+
+### Reconstruir una base de datos a partir de un archivo .sql
+```
+psql -U postgres < salon.sql
+```
+
+
 ### Listar bases de datos
 ```
 \l
@@ -22,6 +33,11 @@ CREATE DATABASE database_name;
 ### Conectar una base de datos
 ```
 \c database_name;
+```
+
+### Desconectarse de una base de datos
+```
+\q
 ```
 
 ### Ver el contenido de la base
