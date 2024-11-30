@@ -24,6 +24,8 @@ Curso de freeCodeCamp, que desarrollaré para aprender SQL, este curso consta de
 
 ### [Project 4: Periodic Table](./4.periodic_table/)
 
+### [Project 5: Number guess](./5.number_guess/)
+
 ![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)
 ![freeCodeCamp](https://img.shields.io/badge/-freeCodeCamp-0A0A23?style=badge&logo=freecodecamp&logoColor=white)
 ![Terminal](https://img.shields.io/badge/Terminal-2E2E2E?style=badge&logo=Windows+Terminal&logoColor=ffffff)
